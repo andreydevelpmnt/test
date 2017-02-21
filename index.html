@@ -4,8 +4,37 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
+	<div class="alert">
+		<span class="close">&times;</span>
+		<p>Добро пожаловать на сайт<br>Познакомьтесь с базовыми функциями</p>
+	</div>
+	<div class="alert">
+		<span class="close">&times;</span>
+		<p>Подтвердите свой електронный арес для доступа ко всем функциям сайта</p>
+	</div>
+	<div class="alert">
+		<span class="close">&times;</span>
+		<p>У Вас (5) новых сообщение</p>
+	</div>
 	
+
+	<script>
+
+	var close = document.getElementsByClassName('close');
+	var i;
+	for(i = 0; i < close.length; i++) {
+		close[i].onclick = function (){
+			var div = this.parentElement;
+			div.style.opacity = "0";
+			setTimeout(function() {
+				div.style.display = "none"
+			}, 600)
+		}
+	}
+
+	</script>
 </body>
 </html>

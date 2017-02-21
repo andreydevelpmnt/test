@@ -1,0 +1,36 @@
+body {
+	float: right;
+}
+.alert {
+	padding: 20px;
+	background-color: #696969;
+	color: #fafafa;
+	width: 300px;
+	opacity: 1;
+	transition:  opacity 0.6s;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+.alert:hover {
+	transition: opacity .6s;
+	opacity: .6;
+
+}
+.alert p {
+	display: inline;
+}
+.close {
+	margin-left: 15px;
+	color: #fff;
+	float: right;
+	font-weight: bold;
+	line-height: 25px;
+	font-size: 22px;
+	cursor: pointer;
+	transition: .3s;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	border-radius: 100%;
+
+}
